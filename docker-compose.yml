@@ -1,0 +1,33 @@
+﻿services:
+  app:
+    container_name: app
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: final
+    ports:
+      - "8080:80"
+    depends_on:
+      - database
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+  database:
+    container_name: database
+    image: postgres
+    environment:
+      POSTGRES_DB: data
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "admin", "-d", "data"]
+      interval: 30s
+      retries: 5
+      timeout: 10s
+
+volumes:
+  postgres_data:
+    driver: local

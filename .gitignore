@@ -1,0 +1,66 @@
+﻿### General ###
+*.log
+*.tmp
+*.cache
+*.pid
+*.pidb
+*.pdb
+*.ilk
+*.iobj
+*.ipdb
+*.ncb
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.DS_Store
+Thumbs.db
+
+### Project ###
+bin/
+obj/
+/packages/
+TestResults/
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+appsettings.json
+
+### Visual Studio ###
+.vs/
+.vscode/
+*.swp
+*.swo
+*.[Cc]ache
+!*.[Ss]ettings.*
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.VC.opendb
+
+### NuGet ###
+*.nupkg
+.nuget/
+NuGet.exe
+nuget.config
+
+### Build Results ###
+*.dll
+*.exe
+*.xml
+*.cache
+*.resources
+
+### ReSharper ###
+_ReSharper.*
+*.sln.iml
+
+### Docker ###
+**/.dockerignore
+**/.env
+
+### Rider ###
+.idea/
+*.sln.iml
+
+### VS Code ###
+.history/
