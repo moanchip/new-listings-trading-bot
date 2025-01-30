@@ -29,7 +29,7 @@ Poloniex), users aim to profit from this volatility before the Binance listing g
 
 Rename `appsettings.example.json` to `appsettings.json` and customize the bot:
 
-```json
+```txt
 "BotConfig": {
   "BuyAmount": 20,     // USDT amount to spend per coin  
   "StopLoss": 1,       // 1% price drop triggers a sell  
