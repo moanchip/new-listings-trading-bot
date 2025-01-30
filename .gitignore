@@ -24,6 +24,7 @@ TestResults/
 [Tt]est[Rr]esult*/
 [Bb]uild[Ll]og.*
 appsettings.json
+Migrations/
 
 ### Visual Studio ###
 .vs/
